@@ -6,12 +6,16 @@ import { Routes, Route } from "react-router-dom";
 import Adoptions from "./pages/Adoptions";
 import Donations from "./pages/Donations";
 import Family from "./pages/Family";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="px-40 h-[100vh]relative">
+    // container
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <div className="h-[calc(100vh-8rem)]">
+
+      {/* content */}
+      <div className="px-8 sm:px-20 h-[calc(100vh-8rem)] relative flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="adoptions" element={<Adoptions />} />
@@ -19,8 +23,9 @@ function App() {
           <Route path="donations" element={<Donations />} />
           <Route path="login" element={<LogIn />} />
         </Routes>
-        {/* <Home /> */}
       </div>
+
+      <Footer />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import familyWomen from "../assets/familyWomen-img.jpg";
 
 function Family() {
   return (
-    <div className="flex flex-col items-center gap-8">
+    <div className="flex flex-col items-center gap-10 mb-20">
       {/* TITLE */}
 
       <h2 className="adigiana text-[#ad53a6] text-5xl">Familia</h2>

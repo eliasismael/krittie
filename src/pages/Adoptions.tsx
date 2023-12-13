@@ -2,7 +2,7 @@ import adoptionsImg from "../assets/adopciones-img.jpg";
 
 function Adoptions() {
   return (
-    <div className="flex flex-col items-center gap-10">
+    <div className="flex flex-col items-center gap-10 my-20">
       {/* TITLE */}
 
       <h2 className="adigiana text-[#ad53a6] text-5xl">Adopciones</h2>

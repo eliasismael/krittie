@@ -9,14 +9,15 @@ import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 
 function LogIn() {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+
   return (
-    <div className="flex h-full text-[#502779] items-center">
-      {/* LEFT SIDE */}
-      <div className="h-[90%] shadow-2xl shadow-black w-5/12 flex flex-col justify-center items-center px-20">
+    <div className="flex flex-col sm:flex-row h-full text-[#502779] items-center justify-evenly">
+      {/*************** LEFT SIDE *****************/}
+      <div className="mb-16 sm:mb-0 shadow-2xl shadow-black w-8/12 sm:w-4/12 flex flex-col justify-center items-center px-8 py-4">
         {/* LOGO & REGISTER */}
-        <div className="flex items-end  justify-center relative w-full mb-4">
+        <div className="flex items-end justify-center relative w-full mb-4">
           <img src={logo} width={80} />
-          <p className="absolute right-0">Register</p>
+          <p className="absolute right-0 text-sm">Register</p>
         </div>
 
         {/* FORM */}
@@ -32,7 +33,6 @@ function LogIn() {
             </label>
 
             {/* PASSWORD */}
-
             <div className="flex items-end w-full relative">
               <label className="flex flex-col w-full">
                 Password
@@ -67,37 +67,55 @@ function LogIn() {
 
           <button
             type="button"
-            className="bg-[#f9aad0] text-[#502779] w-full py-2 mt-6 rounded-md shadow-md shadow-gray-500 flex justify-center items-center"
+            className="bg-[#f9aad0] text-[#502779] w-full py-2 px-2 mt-6 rounded-md shadow-md shadow-gray-500
+            flex justify-center items-center text-sm sm:text-md"
           >
             <TbWorld /> <span className="ml-1">Terms & Conditions</span>
           </button>
         </div>
       </div>
-      {/* RIGHT SIDE */}
-      <div className="flex flex-col justify-evenly px-20 gap-10">
+
+      {/************* RIGHT SIDE ****************/}
+      <div className="w-6/12 flex flex-col justify-evenly gap-10 mb-20 md:px-10">
+        {/* TEXT */}
         <p className="text-xl text-center">
           Refugios que implementan nuestra tecnología para cultivar confianza y
           transparencia en sus procesos:
         </p>
-        <div className="flex justify-evenly items-center">
-          <figure className="h-full flex flex-col justify-between items-center">
+
+        {/* IMAGES */}
+        <div className="flex flex-col sm:flex-row justify-evenly items-center gap-6 ">
+          {/* IMAGE 1 */}
+          <figure className="flex flex-col items-center ">
             <img
               src={perfGatitos}
               alt="Perf Gatitos"
-              width={170}
-              // height={150}
+              width={150}
+              className=" h-full object-cover"
             />
-            <figcaption className="mt-auto">Perf gatitos</figcaption>
+            <figcaption className="mt-2 ">Perf gatitos</figcaption>
           </figure>
 
-          <figure className="h-full flex flex-col justify-between items-center">
-            <img src={gatumania} alt="Gatumania" width={150} />
-            <figcaption>Gatumania</figcaption>
+          {/* IMAGE 2 */}
+          <figure className="flex flex-col items-center ">
+            <img
+              src={gatumania}
+              alt="Gatumania"
+              width={150}
+              className=" h-full object-cover"
+            />
+            <figcaption className="mt-2">Gatumania</figcaption>
           </figure>
 
-          <figure className="h-full flex flex-col justify-between items-center">
-            <img src={zaguates} alt="Zaguates" width={150} />
-            <figcaption>Zaguates</figcaption>
+          {/* IMAGE 3 */}
+          <figure className="flex flex-col items-center ">
+            <img
+              src={zaguates}
+              alt="Zaguates"
+              width={150}
+              className=" h-full object-cover"
+            />
+            <figcaption className="mt-2">Zaguates</figcaption>
           </figure>
         </div>
       </div>

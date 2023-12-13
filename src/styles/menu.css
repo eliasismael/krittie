@@ -1,0 +1,11 @@
+.menu-logo {
+  width: 50px !important;
+  height: 50px;
+  color: #ad53a6;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.menu-logo:hover {
+  color: black;
+}
