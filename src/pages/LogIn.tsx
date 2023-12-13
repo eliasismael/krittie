@@ -1,4 +1,7 @@
 import logo from "../assets/Logo-Kritties.png";
+import perfGatitos from "../assets/perf-gatitos.jpg";
+import zaguates from "../assets/zaguates.jpg";
+import gatumania from "../assets/gatumania.png";
 
 import { useState } from "react";
 import { TbWorld } from "react-icons/tb";
@@ -11,14 +14,14 @@ function LogIn() {
       {/* LEFT SIDE */}
       <div className="h-[90%] shadow-2xl shadow-black w-5/12 flex flex-col justify-center items-center px-20">
         {/* LOGO & REGISTER */}
-        <div className="flex items-end border justify-center relative w-full mb-4">
+        <div className="flex items-end  justify-center relative w-full mb-4">
           <img src={logo} width={80} />
           <p className="absolute right-0">Register</p>
         </div>
 
         {/* FORM */}
         <div className="w-full">
-          <form className="flex flex-col gap-6 justify-evenly items-center border w-full">
+          <form className="flex flex-col gap-6 justify-evenly items-center w-full">
             {/* EMAIL */}
             <label className="flex flex-col font-bold w-full">
               Email
@@ -56,9 +59,9 @@ function LogIn() {
 
             <button
               type="submit"
-              className="bg-[#502779] text-white w-full py-2 rounded-md shadow-md shadow-gray-500"
+              className="bg-[#502779] text-white w-full py-2 rounded-md shadow-md shadow-gray-500 hover:bg-[#7b3896] duration-300"
             >
-              LogIn
+              Login
             </button>
           </form>
 
@@ -70,16 +73,32 @@ function LogIn() {
           </button>
         </div>
       </div>
-      {/* RIGHT */}
-      <div className="flex flex-col justify-evenly px-20">
-        <p>
+      {/* RIGHT SIDE */}
+      <div className="flex flex-col justify-evenly px-20 gap-10">
+        <p className="text-xl text-center">
           Refugios que implementan nuestra tecnología para cultivar confianza y
-          transparencia en sus procesos.
-        </p>{" "}
-        <div className="flex border justify-evenlyb">
-          <caption>Perf Gatitos</caption>
-          <caption>Perf Gatitos</caption>
-          <caption>Perf Gatitos</caption>
+          transparencia en sus procesos:
+        </p>
+        <div className="flex justify-evenly items-center">
+          <figure className="h-full flex flex-col justify-between items-center">
+            <img
+              src={perfGatitos}
+              alt="Perf Gatitos"
+              width={170}
+              // height={150}
+            />
+            <figcaption className="mt-auto">Perf gatitos</figcaption>
+          </figure>
+
+          <figure className="h-full flex flex-col justify-between items-center">
+            <img src={gatumania} alt="Gatumania" width={150} />
+            <figcaption>Gatumania</figcaption>
+          </figure>
+
+          <figure className="h-full flex flex-col justify-between items-center">
+            <img src={zaguates} alt="Zaguates" width={150} />
+            <figcaption>Zaguates</figcaption>
+          </figure>
         </div>
       </div>
     </div>

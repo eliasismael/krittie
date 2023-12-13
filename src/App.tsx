@@ -9,7 +9,7 @@ import Family from "./pages/Family";
 
 function App() {
   return (
-    <div className="px-32 h-[100vh]relative">
+    <div className="px-40 h-[100vh]relative">
       <Navbar />
       <div className="h-[calc(100vh-8rem)]">
         <Routes>

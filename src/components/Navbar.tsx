@@ -57,7 +57,7 @@ function Navbar() {
           </NavLink>
         </li>
         <li className="bg-[#cd86c9] text-black rounded-full px-4 py-1 hover:bg-[#ad53a6] duration-300">
-          <NavLink to={"/login"}>LogIn</NavLink>
+          <NavLink to={"/login"}>Sign in</NavLink>
         </li>
       </ul>
     </nav>

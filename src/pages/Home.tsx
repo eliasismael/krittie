@@ -1,17 +1,19 @@
 import mascotas from "../assets/mascotas.png";
+import perroHerido from "../assets/perro-herido.png";
 
 function Home() {
   return (
     <div className="flex flex-col">
-      <div className="h-[420px] relative overflow-hidden">
+      <div className=" flex items-center justify-center">
+        <img src={mascotas} alt="Mascotas" className=" w-10/12 ml-auto" />
         <img
-          src={mascotas}
-          alt="Mascotas"
-          className="w-full absolute -top-80"
+          src={perroHerido}
+          alt="perro herido"
+          className="w-2/12 self-end mr-auto "
         />
       </div>
 
-      <div className="text-lg">
+      <div className="mt-10 text-lg text-center">
         Krittie actúa como el vínculo esencial entre los refugios y las
         personas. Nuestro objetivo es promover la transparencia y la generosidad
         mediante la tecnología blockchain. Los donativos que recibimos son
