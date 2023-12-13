@@ -7,14 +7,15 @@ import Adoptions from "./pages/Adoptions";
 import Donations from "./pages/Donations";
 import Family from "./pages/Family";
 import Footer from "./components/Footer";
+import BuyKRT from "./components/Cards/BuyKRT";
 
 function App() {
   return (
-    // container
+    // // container
     <div className="flex flex-col min-h-screen">
       <Navbar />
-
       {/* content */}
+
       <div className="px-8 sm:px-20 h-[calc(100vh-8rem)] relative flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,7 +25,6 @@ function App() {
           <Route path="login" element={<LogIn />} />
         </Routes>
       </div>
-
       <Footer />
     </div>
   );
