@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Adigiana Toybox";
+  src: url(../src/assets/fonts/AdigianaUI.ttf)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../src/assets/background.png");
+  background-size: cover;
+}
+
+.adigiana {
+  font-family: "Adigiana Toybox";
+}
