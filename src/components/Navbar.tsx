@@ -66,6 +66,17 @@ function Navbar() {
               Donations
             </NavLink>
           </li>
+
+          <li>
+            <NavLink
+              to={"/shop"}
+              className={({ isActive }) =>
+                isActive ? "underline underline-offset-4" : ""
+              }
+            >
+              On-line shop
+            </NavLink>
+          </li>
           <li className="bg-[#cd86c9] text-black rounded-full px-4 py-1 hover:bg-[#ad53a6] duration-300">
             <NavLink to={"/login"}>Sign in</NavLink>
           </li>

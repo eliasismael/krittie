@@ -67,6 +67,18 @@ const Menu: React.FC<MenuProps> = (props) => {
             Donations
           </NavLink>
         </li>
+
+        <li>
+          <NavLink
+            to={"/shop"}
+            className={({ isActive }) =>
+              isActive ? "underline underline-offset-4" : ""
+            }
+            onClick={() => setIsMenuVisible(false)}
+          >
+            On-line shop
+          </NavLink>
+        </li>
         <li
           className="text-[#cd86c9] text-black rounded-full px-4 py-1 hover:bg-[#ad53a6] duration-300"
           onClick={() => setIsMenuVisible(false)}

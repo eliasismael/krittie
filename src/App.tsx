@@ -8,6 +8,7 @@ import Donations from "./pages/Donations";
 import Family from "./pages/Family";
 import Footer from "./components/Footer";
 import BuyKRT from "./components/Cards/BuyKRT";
+import OnlineShop from "./pages/OnlineShop";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="adoptions" element={<Adoptions />} />
           <Route path="family" element={<Family />} />
           <Route path="donations" element={<Donations />} />
+          <Route path="shop" element={<OnlineShop />} />
           <Route path="login" element={<LogIn />} />
         </Routes>
       </div>
