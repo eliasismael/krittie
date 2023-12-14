@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-import "../styles/Menu.css";
+import "../styles/menu.css";
 
 interface MenuProps {
   windowWidth: number;
