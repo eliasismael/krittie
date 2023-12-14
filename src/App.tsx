@@ -7,7 +7,6 @@ import Adoptions from "./pages/Adoptions";
 import Donations from "./pages/Donations";
 import Family from "./pages/Family";
 import Footer from "./components/Footer";
-import BuyKRT from "./components/Cards/BuyKRT";
 import OnlineShop from "./pages/OnlineShop";
 
 function App() {

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import logo from "../assets/Logo-Kritties.png";
 import { NavLink, Link } from "react-router-dom";
 import useWindowWidth from "../hooks/useWindowWidth";

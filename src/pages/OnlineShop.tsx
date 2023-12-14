@@ -5,7 +5,7 @@ import "../styles/cart.css";
 function OnlineShop() {
   return (
     <div className="relative flex flex-col items-center gap-10 ">
-      <div className="absolute right-0 -top-6 border">
+      <div className="absolute right-0 -top-6">
         <form
           action="https://www.upland.me/"
           method="get"
